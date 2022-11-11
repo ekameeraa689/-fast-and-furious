@@ -1,0 +1,172 @@
+*{
+    border: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.hidden {display: none;}
+
+html, body { height: 100%;}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: red;
+    font-size: 20px;
+}
+
+header {
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+
+#main-logo { width: 300px; padding: 20px 0px;}
+
+#actors_nav {
+    text-align: center;
+    background-color: grey;
+    background-image: url('../images/LMG\ car.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-blend-mode: multiply;
+}
+
+.actors { list-style-type: none;}
+
+.actors li {
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: left;
+    height: 200px;
+    margin: 10px 8px;
+    position: relative;
+    background-color: royalblue;
+}
+
+.actors li h5 {
+    position: relative;
+    color: white;
+    padding: 12px 8px;
+    font-size: medium;
+
+    z-index: 500;
+}
+
+.characters li a { text-decoration: underline;}
+
+.red_bumper {
+    width: 100%;
+    height: 20px;
+    background-color: royalblue;
+
+    transition: height 0.2s ease;
+
+    position: absolute;
+}
+
+.actors li:hover .red_bumper {height: 80px;}
+
+article { padding: 20px;}
+
+article h3 {
+    font-size: 2em;
+    
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 14px;
+    color: black;
+}
+
+article p {
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.sprite {
+    width: 0px;
+    height: 0px;
+    background-image: url('../images/MR.png');
+}
+
+#JohnCena {background-position: -150px 0;}
+#MichelleRodriguez {background-position: -300px 0;}
+#TheRock {background-position: -450px 0;}
+#VinDiesel {background-position: -600px 0;}
+#PaulWalker {background-position: -750px 0;}
+
+.sprite:hover {background-position-y: -150px !important;}
+
+footer {
+    color: red;
+    padding: 20px 0;
+    text-align: center;
+    font-style: normal;
+}
+
+.sticky_footer {
+    position: sticky;
+    top: 100%;
+    
+    height: 70px;
+    background-color:black;
+}
+
+.lightbox {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/jeep.jpg');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; 
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+#lightbox2 { background-image: url('../images/RVP.png'); }
+
+.lightbox_close {
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+
+.lightbox_close:hover { opacity: 0.5; color: rebeccapurple;}
+
+.lightbox article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb_text, .lb_heading { text-align: left; }
+
+.lb_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox:target { display: block; }
