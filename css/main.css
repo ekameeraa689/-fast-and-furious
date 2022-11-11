@@ -7,7 +7,7 @@
 
 .hidden {display: none;}
 
-html, body { height: 100%;}
+html, body { height: 100;}
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -27,7 +27,7 @@ header {
 #actors_nav {
     text-align: center;
     background-color: grey;
-    background-image: url('../images/LMG\ car.jpg');
+    background-image: url('../images/cars.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 
@@ -46,6 +46,8 @@ header {
     position: relative;
     background-color: royalblue;
 }
+
+.actors li:hover .red_bumper { height: 200px;}
 
 .actors li h5 {
     position: relative;
@@ -92,7 +94,7 @@ article p {
 .sprite {
     width: 0px;
     height: 0px;
-    background-image: url('../images/MR.png');
+    background-image: url('../images/jeep.jpg');
 }
 
 #JohnCena {background-position: -150px 0;}
@@ -126,7 +128,7 @@ footer {
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/jeep.jpg');
+    background-image: url('../images/MR.png');
     background-repeat: no-repeat;
 
     background-size: 55vh; 
