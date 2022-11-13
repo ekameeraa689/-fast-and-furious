@@ -7,7 +7,7 @@
 
 .hidden {display: none;}
 
-html, body { height: 100;}
+html, body { height: 100%;}
 
 body {
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -37,17 +37,16 @@ header {
 .actors { list-style-type: none;}
 
 .actors li {
+    position: relative;
     display: inline-block;
     font-size: 20px;
     cursor: pointer;
     text-align: left;
     height: 200px;
     margin: 10px 8px;
-    position: relative;
+   
     background-color: royalblue;
 }
-
-.actors li:hover .red_bumper { height: 200px;}
 
 .actors li h5 {
     position: relative;
@@ -72,7 +71,7 @@ header {
 
 .actors li:hover .red_bumper {height: 80px;}
 
-article { padding: 20px;}
+article { padding: 20px; }
 
 article h3 {
     font-size: 2em;
@@ -94,7 +93,8 @@ article p {
 .sprite {
     width: 0px;
     height: 0px;
-    background-image: url('../images/jeep.jpg');
+    
+    background-image: url('../images/sprites.jpg');
 }
 
 #JohnCena {background-position: -150px 0;}
@@ -128,7 +128,7 @@ footer {
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.85);
-    background-image: url('../images/MR.png');
+    background-image: url('../images/RVP.png');
     background-repeat: no-repeat;
 
     background-size: 55vh; 
@@ -139,7 +139,7 @@ footer {
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/RVP.png'); }
+#lightbox2 { background-image: url('../images/MR.png'); }
 
 .lightbox_close {
     position: relative;
