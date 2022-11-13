@@ -30,7 +30,7 @@ header {
     background-image: url('../images/cars.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-
+    margin-bottom:  1%;
     background-blend-mode: multiply;
 }
 
@@ -41,8 +41,8 @@ header {
     font-size: 20px;
     cursor: pointer;
     text-align: left;
-    height: 200px;
-    margin: 10px 8px;
+    height: 220px;
+    margin: 15px 8px;
     position: relative;
     background-color: royalblue;
 }
@@ -53,12 +53,11 @@ header {
     position: relative;
     color: white;
     padding: 12px 8px;
-    font-size: medium;
-
-    z-index: 500;
+    z-index: 5000;
+    text-align: center;
 }
 
-.characters li a { text-decoration: underline;}
+.actors li a { text-decoration: none;}
 
 .red_bumper {
     width: 100%;
@@ -66,7 +65,6 @@ header {
     background-color: royalblue;
 
     transition: height 0.2s ease;
-
     position: absolute;
 }
 
@@ -92,24 +90,21 @@ article p {
 }
 
 .sprite {
-    width: 0px;
-    height: 0px;
-    background-image: url('../images/jeep.jpg');
+    width: 150px;
+    height: 150px;
+    background-image: url('../images/actorssprites.png');
 }
 
-#JohnCena {background-position: -150px 0;}
-#MichelleRodriguez {background-position: -300px 0;}
-#TheRock {background-position: -450px 0;}
-#VinDiesel {background-position: -600px 0;}
-#PaulWalker {background-position: -750px 0;}
-
-.sprite:hover {background-position-y: -150px !important;}
+#michelle{background-position: -150px 0;}
+#rock{background-position: -300px 0;}
+#vin{background-position: -450px 0;}
+#paul{background-position: -600px 0;}
 
 footer {
     color: red;
     padding: 20px 0;
     text-align: center;
-    font-style: normal;
+
 }
 
 .sticky_footer {
@@ -119,6 +114,8 @@ footer {
     height: 70px;
     background-color:black;
 }
+
+.sprite:hover {background-position-y: -150px !important;}
 
 .lightbox {
     width: 100vw;
@@ -139,7 +136,7 @@ footer {
     display: none;
 }
 
-#lightbox2 { background-image: url('../images/RVP.png'); }
+
 
 .lightbox_close {
     position: relative;
@@ -164,6 +161,7 @@ footer {
 }
 
 .lb_text, .lb_heading { text-align: left; }
+.lb_heading { color: white;}
 
 .lb_text {
     line-height: 1.6 !important;
@@ -172,3 +170,54 @@ footer {
 }
 
 .lightbox:target { display: block; }
+
+.lightbox2 {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    background-color: rgba(0, 0, 0, 0.85);
+    background-image: url('../images/RVP.png');
+    background-repeat: no-repeat;
+
+    background-size: 55vh; 
+    background-position: 40px bottom;
+
+    z-index: 5000;
+
+    display: none;
+}
+
+.lightbox2_close{
+    position: relative;
+    top: 20px;
+    left: 95%;
+
+    color: white;
+    font-size: 3em;
+
+    text-decoration: none;
+
+    font-weight: bolder;
+}
+
+.lightbox2_close:hover { opacity: 0.5; color: rebeccapurple;}
+
+.lightbox2 article {
+    width: 55%;
+    margin-left: 40%;
+    padding-top: 50px;
+}
+
+.lb2_text, .lb2_heading { text-align: left; }
+.lb2_heading { color: white;}
+
+.lb2_text {
+    line-height: 1.6 !important;
+    margin-left: 0;
+    padding-top: 2em;
+}
+
+.lightbox2:target { display: block; }
